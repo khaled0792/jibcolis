@@ -1,0 +1,47 @@
+.container {
+	margin-top: 10px;
+}
+
+.titre {
+	color:white;
+	text-align: center;
+}
+
+/*.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+*/
+
+.img-colis {
+    max-width: 50%;
+    max-height: 100%;
+}
+ 
+.annonce {
+ 	background-color: rgba(255,255,255, 0.6);
+ 	border-radius: 5px;
+ 	padding: 10px;
+}
+
+ .annonce p {
+ 	margin-top:12px;
+}
+ 
+.colis {
+    margin-top:auto;
+    margin-bottom: auto; 
+    margin-left:5%;   
+}
+
+.btn-group-vertical {
+   margin-top:auto;
+   margin-bottom:auto;
+   margin-right:5%; 
+}
+
+.btn {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
