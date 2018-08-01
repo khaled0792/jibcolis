@@ -1,21 +1,29 @@
-<?php session_start();if(!isset($_SESSION['connect'])){	$_SESSION['prenom'] = "Inconnu";	$_SESSION['nom'] = "Mr";	$_SESSION['connect'] = 0;	$_SESSION['img'] = "images/profile.png";}
-/*function seConnecterGOOGLE()
-{
-    include "gpCallback.php"; 
+<?php session_start();
+if (!isset($_SESSION['connect'])) {	$_SESSION['prenom'] = "Inconnu";
+    $_SESSION['nom'] = "Mr";
+    $_SESSION['connect'] = 0;
+    $_SESSION['img'] = "images/profile.png";
 }
-if (isset($_GET['connecte'])) {
-    if (isset($_SESSION['fb_access_token'])) {
-        unset($_SESSION['fb_access_token']);
-    }
-    seConnecterGOOGLE();
-}if (isset($_GET['decc'])) {
-    unset($_SESSION['token']);
-    unset($_SESSION['fb_access_token']);
-    header("location:index.php");
-    exit;
-}*/?>
+/*function seConnecterGOOGLE()
+ {
+ include "gpCallback.php";
+ }
+ if (isset($_GET['connecte'])) {
+ if (isset($_SESSION['fb_access_token'])) {
+ unset($_SESSION['fb_access_token']);
+ }
+ seConnecterGOOGLE();
+ }if (isset($_GET['decc'])) {
+ unset($_SESSION['token']);
+ unset($_SESSION['fb_access_token']);
+ header("location:index.php");
+ exit;
+ }*/
+?>
 <!DOCTYPE html><html><head>
-   <?php include("head.php");  ?>
+   <?php
+include ("head.php");
+  ?>
    <link rel="stylesheet" href="../css/style.css">
     
     </head><!--**********************************************************************************************************--><!--corp de la page-->
@@ -23,11 +31,11 @@ if (isset($_GET['connecte'])) {
     <body>
     <!--menu-->    
     <?php
-        include "box.php";
-        if ($_SESSION['connect'] == 0)
-                        include "menu.php";        
-                    else
-                    	include "menu2.php";        
+    include "box.php";
+    if ($_SESSION['connect'] == 0)
+        include "menu.php";
+    else
+        include "menu2.php";
     ?><!--/menu-->   
      <!--corp-->   
      <div>
@@ -41,12 +49,18 @@ if (isset($_GET['connecte'])) {
             </div>            <br />
             <div class="row">
             <div class="col-md-3"></div>                              <div class="col-md-3">               
-    			<?php if (isset($_SESSION['id']))    			
-    				echo '<a class="btn btnjbl vertf" href="deposer.php">Déposer une annonce</a>';                                        else                                     echo '<button class="btn btnjbl vertf" name="button" data-toggle="modal" data-target="#myModal" id="myBtn">Déposer une annonce</button>';	    			?>    			
+    			<?php
+                if (isset($_SESSION['id']))
+                    echo '<a class="btn btnjbl vertf" href="deposer.php">Déposer une annonce</a>';
+                else
+                    echo '<button class="btn btnjbl vertf" name="button" data-toggle="modal" data-target="#myModal" id="myBtn">Déposer une annonce</button>';
+	    			?>    			
     		</div>
-    			<div class="col-md-3">    			        			    <?php if (isset($_SESSION['id']))
-    					echo '<a class="btn btnjbr maronf"  href="annonces.php">Voir les annonces</a>';
-    				      else                                                       echo '<button class="btn btnjbr maronf" name="button" data-toggle="modal" data-target="#myModal">Voir les annonces</button>';
+    			<div class="col-md-3">    			        			    <?php
+                if (isset($_SESSION['id']))
+                    echo '<a class="btn btnjbr maronf"  href="annonces.php">Voir les annonces</a>';
+                else
+                    echo '<button class="btn btnjbr maronf" name="button" data-toggle="modal" data-target="#myModal">Voir les annonces</button>';
     				?>
     			</div>    			<div class="col-md-3"></div>
                 </div>                <br />                 <a href="#jibcolis" class="btn btn-link" style="color: white;">en savoir plus ... </a>
@@ -88,6 +102,7 @@ if (isset($_GET['connecte'])) {
     </div>    <!--/corp-->
     </div>
     <!-- footer-->    <?php
-    	include("footer.php");
+    include ("footer.php");
     ?>    <!--/footer-->
-      <?php        include "connexion_box.php";   ?></body></html>
+    </body>
+    </html>
