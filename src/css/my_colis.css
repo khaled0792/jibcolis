@@ -5,6 +5,10 @@
 .titre {
 	color:white;
 	text-align: center;
+	margin-bottom: 40px;
+	font-family: 'Old Standard TT';font-size: 35px;
+	font-weight:bold;
+
 }
 
 /*.container {
@@ -22,7 +26,10 @@
 .annonce {
  	background-color: rgba(255,255,255, 0.6);
  	border-radius: 5px;
- 	padding: 10px;
+ 	padding: 5px;
+ 	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
  .annonce p {

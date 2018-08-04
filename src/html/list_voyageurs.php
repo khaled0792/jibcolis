@@ -24,14 +24,15 @@ $req->execute(array());
         
     </head>
     <body>
+        <header>
        <?php
            include "menu2.php";
         ?>
+        </header>
+        
         <div class="container body">
                 <p></p>
-                <h3 class="titre">Liste des voyageurs</h3>
-                <p><br /></p>
-                
+                <h3 class="titre">Liste des voyageurs</h3>                
                 <?php
                 if (!$req)
                     {

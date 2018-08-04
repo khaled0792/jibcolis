@@ -25,9 +25,11 @@ $req->execute(array());
         
     </head>
     <body>
+        <header>
        <?php
            include "menu2.php";
         ?>
+        </header>
         <div class="container body">
                 <h3 class="titre">Liste des Colis</h3>
                 <p></p>

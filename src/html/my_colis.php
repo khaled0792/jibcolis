@@ -24,11 +24,13 @@ $req->execute(array('id' => $_SESSION['id']));
     </head>
     <body>
        <div>
+           <header>
        <?php
            include "menu2.php";
         ?>
+        </header>
         <div class="container body">
-                <div><h2 class="titre">Mes Colis</h2><br /></div>
+                <div><h2 class="titre">Mes Colis</h2></div>
                 <?php
                 if (!$req)
                     {

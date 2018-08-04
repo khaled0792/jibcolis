@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 <link rel="shortcut icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!--google font--><link href='https://fonts.googleapis.com/css?family=Old Standard TT' rel='stylesheet'>
 <!--script-->
 <script src="https://code.jquery.com/jquery-3.2.1.js"
 integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -16,4 +16,4 @@ crossorigin="anonymous"></script>
 <!--css-->
 <!--<link rel="stylesheet" href="../css/index.css" type="text/css" media="screen" >-->
 <link rel="stylesheet" href="../css/body.css" type="text/css" media="screen" >
-<link rel="stylesheet" href="../css/footer.css" type="text/css" media="screen" >
+<link rel="stylesheet" href="../css/footer.css" type="text/css" media="screen" >
